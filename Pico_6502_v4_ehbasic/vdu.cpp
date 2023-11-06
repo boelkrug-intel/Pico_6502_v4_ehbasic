@@ -463,5 +463,7 @@ void helloDisplay() {
 //  display.print("NEO6502");
   setColor(255); // WHITE
   display.println("\n            memulator v0.04ehbp2");
+  display.println("\n            modified by Bernhard Oelkrug");
+  display.println("\n            November 3rd, 2023");
   setColor(DEFAULT_TEXT_COLOR); // GREEN
 }
