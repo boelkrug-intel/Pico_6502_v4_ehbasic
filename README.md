@@ -28,3 +28,19 @@ BTW no real USB-keyboard yet. You need to use a terminal emulator on your system
 - I added a default 256 color palette according to these definitions: https://www.ditig.com/256-colors-cheat-sheet
 - Ehbasic allows for Mixed case programming.
 - A simple sprite engine has been added
+
+# For successful compile
+1. use Arduino IDE 2.2.1 (downloaded from www.arduino.cc)
+
+2. add the following required Libraries to the IDE ("Tools" -> "Manage Libraries...")
+
+a) PicoDVI - Adafruit Fork by Luke Wren (1.1.0)
+
+b) Queue by SMFSW (1.11)
+
+c) RP2040_PWM by Khoi Hoang (1.7.0)
+
+d) RPI_PICO_TimerInterrupt by Khoi Hoang (1.3.1)
+
+4. change ehbasic.cpp to point the following line to where your basic.mon file is located locally:
+#include "C:\cygwin64\home\Rien\pico\ehbasic.neo6502\basic.mon"
