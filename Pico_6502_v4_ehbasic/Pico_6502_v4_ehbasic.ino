@@ -88,7 +88,7 @@ void serialEvent1()
       for (uint8_t i = 0; i < 18; i++) {
         Serial.printf("%02X ", mem[0XD020 + i]);
       }
-      Serial.println("\n\SPRITE:");
+      Serial.println("\nSPRITE:");
       for (uint8_t i = 0; i < 16; i++) {
         for (uint8_t j = 0; j < 16; j++) {
           Serial.printf("%02X ", mem[0XD100 + i*16 + j]);
@@ -97,7 +97,7 @@ void serialEvent1()
       }
       Serial.println();
 
-      Serial.println("\n\TILE:");
+      Serial.println("\nTILE:");
       for (uint8_t i = 0; i < 16; i++) {
         for (uint8_t j = 0; j < 16; j++) {
           Serial.printf("%02X ", mem[0XD200 + i * 16 + j]);
